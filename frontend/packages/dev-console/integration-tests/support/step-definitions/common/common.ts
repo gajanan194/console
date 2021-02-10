@@ -81,3 +81,11 @@ Given('user has selected namespace {string}', (projectName: string) => {
 When('user clicks on {string} link', (buttonName: string) => {
   cy.byButtonText(buttonName).click();
 });
+<<<<<<< HEAD
+=======
+
+When('user is at namespace {string}', (projectName: string) => {
+  perspective.switchTo(switchPerspective.Developer);
+  projectNameSpace.selectOrCreateProject(projectName);
+});
+>>>>>>> 6329c093c... Workloads on Topology Page Automation
